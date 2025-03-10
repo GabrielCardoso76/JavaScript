@@ -1,10 +1,13 @@
 function calcularDesconto(preco, desconto) {
-  if (!desconto || desconto == 0) {
+  if (!desconto || desconto === 0) {
     return preco * 0.9;
   } else {
-    return preco * (1 - desconto);
+    let valorDesconto = preco * (desconto / 100);
+    let precoComDesconto = preco - valorDesconto;
+    return precoComDesconto;
   }
 }
+
 function calcular() {
   let valid = document.getElementById('preco');
   let valid1 = document.getElementById('desconto');
