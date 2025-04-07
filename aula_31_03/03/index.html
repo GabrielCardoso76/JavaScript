@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="js/GerenciadorDeProdutos.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gerenciador de Pedidos</title>
+</head>
+<body>
+    <h1>Gerenciador de Pedidos</h1>
+    <label for="nome">Nome do Item: </label>
+    <input type="text" id="nome">
+    <br>
+    <label for="quantidade">Quantidade do Item: </label>
+    <input type="number" id="quantidade">
+    <label for="preco">Preço Unitário do Item: </label>
+    <input type="number" id="preco" step="0.01">
+    <br>
+    <button id="adicionarBtn"> Adicionar Item a lista de pedidos</button>
+    <button id="removerBtn"> Remover Item da lista de pedidos</button>
+    <button id="totalBtn">Valor Total dos pedidos</button>
+    <h2>Lista de Pedidos</h2>
+    <ul id="estoqueLista"></ul>
+    <h2>Exibir Total</h2>
+    <p id="resultado" step="0.01"></p>
+
+</body>
+</html>
