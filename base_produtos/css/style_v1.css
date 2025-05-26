@@ -39,3 +39,7 @@ img {
   margin: 10px 50px 10px 50px;
   display: block;
 }
+
+input,button{
+  margin-left: 20px;
+}
